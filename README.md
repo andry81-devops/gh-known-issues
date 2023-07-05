@@ -67,6 +67,10 @@ Variants:
 
   To workaround the error do use the `TEMP_DIR` variable to declare explicit temporary directory out of Cygwin `/tmp` directory.
 
+## Annotations from composite actions are not correctly created
+
+Only a single annotation gets created in composite actions. Every single annotation (error, warning, notice) with the exception of the last one gets ignored
+
 # Last known issues updates
 
 ## Updates on composite actions features
@@ -82,3 +86,5 @@ Variants:
 * `unable to inject shell to composite action`: https://github.com/actions/runner/issues/835
 
 * `Boolean inputs are not actually booleans` : https://github.com/actions/runner/issues/1483
+
+* `Annotations from composite actions are not correctly created` : https://github.com/actions/runner/issues/1742
